@@ -1,0 +1,58 @@
+table{
+    width: 25rem;
+    border: 5px ;
+    padding:50px;
+    margin: 120px;
+    border-bottom:  100px;
+    background-color: rgba(255,255,255,.06);
+    box-shadow: 0 8px 32px 0 rgba( 31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+label,h1{ 
+    color:red;
+}
+body{
+    background: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    opacity: .90;
+    font-size:20px;
+}
+a:hover,button:hover{
+    background-color: #dc143d;
+}
+.form-control.success.input{
+    border-color: #2ecc71;
+}
+.form-control.error.input{
+    border-color:red;
+}
+.form-control.success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility:hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}

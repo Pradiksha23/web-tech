@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="sam.css">
+        <button>
+            <link rel="stylesheet" href="pro.html">
+        </button>
+        <script>
+            const form=document.getElementById("form")
+            const username=document.getElementById("username")
+            const password=document.getElementById("password")
+            const email=document.getElementById("email")
+            function checkInput(){
+                const usernameValue=username.value.trim();
+                const emailValue=email.value.trim();
+                const password=password.value.trim();
+                if(usernameValue===''){
+                    setError(username,'Username cannot be blank');
+                }
+                else{
+                    setSuccess(username);
+                }
+                if(emailValue===''){
+                    setError(email,'Email cannot be blank');
+                }
+                else if(!isEmail(emailValue))
+                {
+                    setError(email,'not a valid email');
+                }
+                else{
+                    setsuccess(email);
+                }
+                if(passwordValue===''){
+                    setError(password,'password cannot be blank');
+                }
+                else{
+                    setSuccess(username);
+                }
+            }
+            function setError(input,message){
+                const formControl=input.parentElement;
+                const small=formControl.queryselector('small');
+                formControl.className='form-control error';
+                small.innerText=message;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <table>
+            <thead>
+                <th><h1>LOG IN</h1></th>
+            </thead>
+            <tbody>
+                <form class="form" id="form">
+                    <tr><td>
+                        <div class="form-control">
+                            <label for="username">USERNAME</label><BR></BR>
+                            <input type="text" id="username" name="username" >
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">EMAIL</label><BR></BR>
+                            <input type="email" id="email" name="email" >
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="password">PASSWORD</label><BR></BR>
+                            <input type="password" id="password" name="password" >
+                            <i class="fas fa-check-circle"></i>      
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error message</small>
+                        </div>
+                        <div>
+                            <button type="submit" value="submit" class="submit-btn" onclick="login()" ><a href="pro.html
+                                ">submit</a></button><br><br>
+                            <label>Don't have an account?</label>
+                            <a href="sign.html" style="color: white;" >SIGN IN</a>
+                        </div>
+                       
+                    </td></tr>
+                </form>
+            
+        </table>
+    </center>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+table{
+    border: 5px ;
+    padding:50px;
+    margin: 90px;
+    border-bottom: 100px;
+    background-color: rgba(255,255,255,.06);
+    box-shadow: 0 8px 32px 0 rgba( 0,0,0,0.5);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+label,h1{ 
+    color:white;
+}
+body{
+    background: lightpink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+input{
+    margin: bottom 3px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    opacity: .90;
+    font-size: 18px;
+}
+a:hover,button:hover{
+    background-color:crimson;
+}
+a{
+    font-size: 14px;
+}
